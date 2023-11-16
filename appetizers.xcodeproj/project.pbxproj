@@ -19,6 +19,7 @@
 		9FC53ADC2B068DBE00D124B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC53ADB2B068DBE00D124B8 /* NetworkManager.swift */; };
 		9FC53ADE2B068F4900D124B8 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC53ADD2B068F4900D124B8 /* APError.swift */; };
 		9FC53AE02B06972600D124B8 /* AppertizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC53ADF2B06972600D124B8 /* AppertizerListViewModel.swift */; };
+		9FC53AE22B069AF300D124B8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC53AE12B069AF300D124B8 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		9FC53ADB2B068DBE00D124B8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9FC53ADD2B068F4900D124B8 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		9FC53ADF2B06972600D124B8 /* AppertizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppertizerListViewModel.swift; sourceTree = "<group>"; };
+		9FC53AE12B069AF300D124B8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				9FC53ADB2B068DBE00D124B8 /* NetworkManager.swift */,
 				9FC53ADD2B068F4900D124B8 /* APError.swift */,
 				9FC53ADF2B06972600D124B8 /* AppertizerListViewModel.swift */,
+				9FC53AE12B069AF300D124B8 /* Alert.swift */,
 			);
 			path = appetizers;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				9FC53ADC2B068DBE00D124B8 /* NetworkManager.swift in Sources */,
 				9FC53AE02B06972600D124B8 /* AppertizerListViewModel.swift in Sources */,
 				9FC53AC62B0667D700D124B8 /* AppetizersTabView.swift in Sources */,
+				9FC53AE22B069AF300D124B8 /* Alert.swift in Sources */,
 				9FC53AC42B0667D700D124B8 /* appetizersApp.swift in Sources */,
 				9FC53AD22B0668BD00D124B8 /* AppetizersListView.swift in Sources */,
 			);
