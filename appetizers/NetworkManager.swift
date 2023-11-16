@@ -1,8 +1,10 @@
 import Foundation
+import UIKit
 
 final class NetworkManager {
     
     static let shared = NetworkManager()
+    private let cache = NSCache<NSString, UIImage>() // lo que acacheamos es el id en string y la imagen
     
     static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     private let appetizerURL = baseURL + "appetizers"
@@ -44,6 +46,31 @@ final class NetworkManager {
             }
         }
         
+        task.resume()
+    }
+    
+    func downloadImage(fromURLString urlString: String, completed: @escaping (UIImage?) -> Void) {
+        
+        let cacheKey = NSString(string: urlString)
+        
+        if let image = cache.object(forKey: cacheKey) {
+            completed(image)
+            return
+        } // chequea si existe en cache, si existe devuevle eso y listo
+        
+        guard let url = URL(string: urlString) else {
+            completed(nil)
+            return
+        }// chequea si la url es buena, sino corta el proceso y devuelve nil
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            guard let data = data, let image = UIImage(data: data) else {
+                completed(nil)
+                return
+            }
+            self.cache.setObject(image, forKey: cacheKey)
+            completed(image)
+        } // devuelve la imagen y la guarda en cache
         task.resume()
     }
 }
