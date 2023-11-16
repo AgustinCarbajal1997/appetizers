@@ -23,6 +23,7 @@
 		9FC53AE42B069FC700D124B8 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC53AE32B069FC700D124B8 /* Loading.swift */; };
 		9FC53AE62B06A0EA00D124B8 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC53AE52B06A0EA00D124B8 /* Color+Ext.swift */; };
 		9FC53AE82B06B19F00D124B8 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC53AE72B06B19F00D124B8 /* RemoteImage.swift */; };
+		9FC53AF72B06B84C00D124B8 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC53AF62B06B84C00D124B8 /* AppetizerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		9FC53AE32B069FC700D124B8 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		9FC53AE52B06A0EA00D124B8 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		9FC53AE72B06B19F00D124B8 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		9FC53AF62B06B84C00D124B8 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				9FC53ADF2B06972600D124B8 /* AppertizerListViewModel.swift */,
 				9FC53AD12B0668BD00D124B8 /* AppetizersListView.swift */,
+				9FC53AF62B06B84C00D124B8 /* AppetizerDetailView.swift */,
 			);
 			path = AppetizersListView;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				9FC53AE02B06972600D124B8 /* AppertizerListViewModel.swift in Sources */,
 				9FC53AC62B0667D700D124B8 /* AppetizersTabView.swift in Sources */,
 				9FC53AE82B06B19F00D124B8 /* RemoteImage.swift in Sources */,
+				9FC53AF72B06B84C00D124B8 /* AppetizerDetailView.swift in Sources */,
 				9FC53AE22B069AF300D124B8 /* Alert.swift in Sources */,
 				9FC53AC42B0667D700D124B8 /* appetizersApp.swift in Sources */,
 				9FC53AE42B069FC700D124B8 /* Loading.swift in Sources */,
