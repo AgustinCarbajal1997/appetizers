@@ -1,15 +1,20 @@
-//
-//  AppetizersListView.swift
-//  appetizers
-//
-//  Created by Agustin Carbajal on 16/11/2023.
-//
-
 import SwiftUI
 
 struct AppetizersListView: View {
+    
+    @StateObject var viewModel = AppetizerListViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(viewModel.appetizers, id: \.id) {
+                appetizer in
+                AppetizerListCell(appetizer: appetizer)
+            }
+                .navigationTitle("🍿Appetizers")
+        }
+        .onAppear{
+            viewModel.getAppetizers()
+        }
     }
 }
 
