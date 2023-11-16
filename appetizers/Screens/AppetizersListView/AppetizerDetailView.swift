@@ -14,8 +14,7 @@ struct AppetizerDetailView: View {
     
     var body: some View {
         VStack{
-            Image("food")
-                .resizable()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225)
             
@@ -66,18 +65,11 @@ struct AppetizerDetailView: View {
             
             Spacer()
             
-            Button{
-                print("tapped")
-            }label: {
-                Text("$\(appetizer.price, specifier: "%.2f") - Add order")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .frame(width: 260, height: 50)
-                    .foregroundColor(.white)
-                    .background(Color.brandPrimary)
-                    .cornerRadius(10)
-            }
-            .padding(.bottom, 30)
+            Button{} label: {
+                ApButton(title: "$\(appetizer.price, specifier: "%.2f") - Add order")
+            } .padding(.bottom, 30)
+            
+
         }
         .frame(width: 300, height: 525)
         .background(Color(.systemBackground))
@@ -105,3 +97,5 @@ struct AppetizerDetailView_Previews: PreviewProvider {
         AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetail: .constant(true))
     }
 }
+
+

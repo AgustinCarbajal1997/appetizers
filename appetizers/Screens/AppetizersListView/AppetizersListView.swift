@@ -3,7 +3,7 @@ import SwiftUI
 struct AppetizersListView: View {
     
     @StateObject var viewModel = AppetizerListViewModel()
-    @State private var isShowingDetail: Bool = false
+
     
     var body: some View {
         ZStack{
@@ -12,17 +12,20 @@ struct AppetizersListView: View {
                     appetizer in
                     AppetizerListCell(appetizer: appetizer)
                         .onTapGesture {
-                            isShowingDetail = true
+                            viewModel.selectedAppetizar = appetizer
+                            viewModel.isShowingDetail = true
                         }
                 }
                     .navigationTitle("🍿Appetizers")
+                    .disabled(viewModel.isShowingDetail)
             }
             .onAppear {
                 viewModel.getAppetizers()
             }
+            .blur(radius: viewModel.isShowingDetail ? 15 : 0)
             
-            if isShowingDetail {
-                AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetail: $isShowingDetail)
+            if viewModel.isShowingDetail {
+                AppetizerDetailView(appetizer: viewModel.selectedAppetizar!, isShowingDetail: $viewModel.isShowingDetail)
             }
             
             if viewModel.isLoading {
