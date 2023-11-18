@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AppetizerDetailView: View {
     
+    @EnvironmentObject var order: Order // me traigo el estado que inyecte at top level (appetize app)
+    
     let appetizer: Appetizer
     @Binding var isShowingDetail: Bool
     
@@ -65,7 +67,10 @@ struct AppetizerDetailView: View {
             
             Spacer()
             
-            Button{} label: {
+            Button{
+                order.add(appetizer)
+                isShowingDetail = false
+            } label: {
                 ApButton(title: "$\(appetizer.price, specifier: "%.2f") - Add order")
             } .padding(.bottom, 30)
             
