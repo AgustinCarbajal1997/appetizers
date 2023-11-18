@@ -27,6 +27,7 @@
 		9FC53AFA2B06C79A00D124B8 /* ApButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC53AF92B06C79A00D124B8 /* ApButton.swift */; };
 		9FDF570A2B0948E300A63C55 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF57092B0948E300A63C55 /* AccountViewModel.swift */; };
 		9FDF570C2B094AFD00A63C55 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF570B2B094AFD00A63C55 /* String+Ext.swift */; };
+		9FDF570E2B094FEF00A63C55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF570D2B094FEF00A63C55 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		9FC53AF92B06C79A00D124B8 /* ApButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApButton.swift; sourceTree = "<group>"; };
 		9FDF57092B0948E300A63C55 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		9FDF570B2B094AFD00A63C55 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		9FDF570D2B094FEF00A63C55 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC53AD72B0670D500D124B8 /* Appetizer.swift */,
+				9FDF570D2B094FEF00A63C55 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				9FC53AE42B069FC700D124B8 /* Loading.swift in Sources */,
 				9FDF570A2B0948E300A63C55 /* AccountViewModel.swift in Sources */,
 				9FC53AD22B0668BD00D124B8 /* AppetizersListView.swift in Sources */,
+				9FDF570E2B094FEF00A63C55 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
