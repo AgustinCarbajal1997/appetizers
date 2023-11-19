@@ -15,8 +15,10 @@ struct AppetizersListView: View {
                             viewModel.selectedAppetizar = appetizer
                             viewModel.isShowingDetail = true
                         }
+                        .listRowSeparator(.hidden)
                 }
                     .navigationTitle("🍿Appetizers")
+                    .listStyle(.plain)
                     .disabled(viewModel.isShowingDetail)
             }
             .onAppear {
