@@ -15,17 +15,17 @@ struct AppetizersTabView: View {
         TabView{
             AppetizersListView()
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("Home", systemImage: "house").environment(\.symbolVariants, .none)
                 }
             OrderView()
                 .tabItem {
-                    Label("Order", systemImage: "bag")
+                    Label("Order", systemImage: "bag").environment(\.symbolVariants, .none)
                         
                 }
                 .badge(order.items.count)
             AccountView()
                 .tabItem {
-                    Label("Account", systemImage: "person")
+                    Label("Account", systemImage: "person").environment(\.symbolVariants, .none)
                 }
         }.accentColor(.brandPrimary) // mira como tiñe con este color los detalles
     }

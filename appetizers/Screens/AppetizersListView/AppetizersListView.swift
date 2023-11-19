@@ -22,7 +22,10 @@ struct AppetizersListView: View {
                     .disabled(viewModel.isShowingDetail)
             }
             .onAppear {
-                viewModel.getAppetizers()
+                //viewModel.getAppetizers() // vieja forma de hacerlo
+            }
+            .task {
+                viewModel.getAppetizers() // vieja forma de hacerlo task es async ya y cancela la llamada si se desmonta la pantalla antes de completar
             }
             .blur(radius: viewModel.isShowingDetail ? 15 : 0)
             
